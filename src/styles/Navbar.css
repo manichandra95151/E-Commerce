@@ -1,0 +1,40 @@
+.fixed-navbar  {
+  position: relative;
+
+}
+
+.fixed-navbar img{
+  position: absolute;
+  top:0;
+  height: 100px;
+  width: 100px;
+  left: -3%;
+  border: solid 10px rgb(255, 255, 255);
+}
+.badge{
+  border: 2px solid rgb(197, 186, 186);
+}
+
+h1{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px 150px;
+  font-size: 25px;
+}
+
+
+.navbar {
+  padding: 0.5rem 1rem; /* Adjust padding */
+}
+
+.navbar-brand h1 {
+  font-size: 1.5rem; /* Adjust title size */
+  margin: 0;
+}
+
+.navbar-nav .nav-link {
+  margin-right: 1rem; /* Adjust spacing between links */
+}
+
+.badge {
+  padding: 0.25rem 0.5rem; /* Adjust badge padding */
+}

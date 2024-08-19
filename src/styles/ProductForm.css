@@ -1,0 +1,47 @@
+.product-form{
+  border: solid 5px black;
+  display: flex;
+  flex-direction: column;
+  max-width: 750px;
+  margin: 5px auto;
+  padding: 20px;
+  border-radius: 20px; 
+}
+.product-form input{
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  border: solid 1px rgba(128, 128, 128, 0.163);
+}
+.product-form input:hover{
+  border: solid 1px black;
+}
+.product-form textarea{
+  margin-bottom: 5px;
+  padding: 20px 10px;
+  border-radius: 20px;
+  background-color:white;
+  border: solid 1px rgba(128, 128, 128, 0.163);
+
+}
+.product-form textarea:hover{
+  border: solid 1px black;
+}
+.product-form button{
+  margin-top: 10px;
+  width: max-content;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: solid 2px black;
+  cursor: pointer;
+  margin: auto;
+  background-color: white;
+  transition: .2s linear;
+  color:rgb(74, 62, 62)
+}
+.product-form button:hover{
+  background-color: ;
+  color: black;
+}
