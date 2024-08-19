@@ -7,10 +7,10 @@ https://e-commerce-neon-chi.vercel.app/
 
 ## Features
 
--Responsive Navbar: Includes a logo and navigation links.
--Product Listing Page: Browse available products.
--Shopping Cart: Manage items in your cart with ease.
--State Management with Redux: Efficiently manage cart items across the app.
+- Responsive Navbar: Includes a logo and navigation links.
+- Product Listing Page: Browse available products.
+- Shopping Cart: Manage items in your cart with ease.
+- State Management with Redux: Efficiently manage cart items across the app.
 
 ## Getting Started
 
