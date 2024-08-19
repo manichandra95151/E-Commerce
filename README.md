@@ -1,4 +1,4 @@
-# E-commerce Frontend
+# E-commerce
 
 This project is the frontend of our e-commerce platform, crafted with React. It includes essential features such as product browsing, cart management, and a responsive navigation bar.
 
