@@ -1,54 +1,62 @@
 .product-list {
-  /* height: 100vh; */
   display: grid;
   margin: 20px;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: min-content;
   gap: 40px;
   padding: 40px;
-  /* overflow-y: auto;
-  overflow-x: hidden; */
-  background-color:#d6e9e6;
+  background-color: #d6e9e6;
   border-radius: 30px;
 }
-.product-item > div{
+
+.product-item > div {
   background-color: rgb(255, 255, 255);
   border-radius: 20px;
   border: 5px solid rgb(246, 246, 246);
   transition: 0.3s;
 }
-.product-item > div:hover{
+
+.product-item > div:hover {
   border: 5px solid black;
 }
 
+.product-image {
+  width: 150px; /* Set the desired width */
+  height: 150px; /* Set the desired height */
+  object-fit: contain; /* Ensures the whole image is visible */
+  border-radius: 5px; /* Optional: Adds a slight border radius for better aesthetics */
+  margin-left: 25%;
+}
 
-.sort-btn,.clear-sort-btn{
+
+.sort-btn, .clear-sort-btn {
   width: 150px;
   margin: 10px;
   border-radius: 10px;
   border: 2px solid rgba(128, 128, 128, 0.347);
-  transition: .2s linear;;
+  transition: 0.2s linear;
 }
 
-.clear-sort-btn:hover{
+.clear-sort-btn:hover {
   border: 2px solid black;
 }
 
-.product-item .btn-grp{
+.product-item .btn-grp {
   display: flex;
   justify-content: center;
-  border:none;
-  color:black
+  border: none;
+  color: black;
 }
-.product-item .btn-grp button{
+
+.product-item .btn-grp button {
   width: 100px;
   height: 40px;
   margin: 5px 5px;
   color: black;
-  font-size: .8rem;
-  transition: .3s ease-in-out;
-
+  font-size: 0.8rem;
+  transition: 0.3s ease-in-out;
 }
-.product-item .btn-grp button{
+
+.product-item .btn-grp button {
   border: 2px solid black;
 }
