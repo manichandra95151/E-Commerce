@@ -13,6 +13,7 @@ const getFromLocalStorage = (key) => {
 
 export const fetchProducts = async () => {
   const localProducts = getFromLocalStorage('products');
+  localStorage.clear();
   if (localProducts) return { data: localProducts };
   const response = await axios.get(`${API_BASE_URL}/products`);
   saveToLocalStorage('products', response.data);
