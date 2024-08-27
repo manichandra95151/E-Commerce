@@ -28,14 +28,15 @@ const ProductItem = ({ product }) => {
   return (
     <div className="product-item">
       <div className="card h-100">
+        <img src={product.image} alt={product.name} className="card-img-top product-image"  />
         <div className="card-body d-flex flex-column">
           <h3 className="card-title">{product.name}</h3>
           <p className="card-text">₹ {product.price}</p>
           <p className="card-text flex-grow-1">{product.description}</p>
           <div className="btn-grp">
-            <button className="btn btn-primary"  style={{ backgroundColor: 'transparent' }} onClick={() => setIsEditing(true)}>Edit</button>
-            <button className="btn btn-primary"style={{ backgroundColor: 'transparent' }}  onClick={handleDelete}>Delete</button>
-            <button className="btn btn-primary"style={{ backgroundColor: 'transparent' }}  onClick={handleAddToCart}>Add to Cart</button>
+            <button className="btn btn-primary" style={{ backgroundColor: 'transparent' }} onClick={() => setIsEditing(true)}>Edit</button>
+            <button className="btn btn-primary" style={{ backgroundColor: 'transparent' }} onClick={handleDelete}>Delete</button>
+            <button className="btn btn-primary" style={{ backgroundColor: 'transparent' }} onClick={handleAddToCart}>Add to Cart</button>
           </div>
         </div>
       </div>
