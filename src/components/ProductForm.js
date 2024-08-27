@@ -48,6 +48,14 @@ const ProductForm = ({ product, onSubmit }) => {
         placeholder="Price"
         required
       />
+      <input
+        name="image"
+        type="text"
+        value={formData.image}
+        onChange={handleChange}
+        placeholder="Image"
+        required
+      />
       <textarea
         name="description"
         value={formData.description}
