@@ -1,6 +1,8 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'https://my-json-server.typicode.com/alqamah/api-ecommerce';
+const API_BASE_URL = 'https://my-json-server.typicode.com/manichandra95151/e-com-db';
+
+
 
 const saveToLocalStorage = (key, data) => {
   localStorage.setItem(key, JSON.stringify(data));
@@ -13,9 +15,12 @@ const getFromLocalStorage = (key) => {
 
 export const fetchProducts = async () => {
   const localProducts = getFromLocalStorage('products');
-  localStorage.clear();
+  
   if (localProducts) return { data: localProducts };
   const response = await axios.get(`${API_BASE_URL}/products`);
+  console.log('Full response:', response);
+  const products = response.data;
+  products.forEach(product => console.log(product));
   saveToLocalStorage('products', response.data);
   return response;
 };
